@@ -16,10 +16,3 @@ zuul:
     foos:
       path: /foos/**
       url: http://localhost:18082/foos
-      #url: http://localhost:18082/spring-zuul-foos-resource/foos
-      #serviceID: API-SERVICE
-      #servicePath: /spring-zuul-foos-resource/foos
-      stripPrefix: false
-#ribbon:
-  #eureka:
-    #enabled: true
