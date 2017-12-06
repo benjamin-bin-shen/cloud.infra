@@ -27,7 +27,7 @@ var app = angular.module('myApp', ["ngResource"]);
 
 app.controller('mainCtrl', function($scope,$resource,$http) {
     $scope.foo = {id:0 , name:"sample foo"};
-    $scope.foos = $resource("/foos/:fooId",{fooId:'@id'});
+    $scope.foos = $resource("/spring-zuul-foos-resource/foos/:fooId",{fooId:'@id'});
     
     $scope.getFoo = function(){
         $scope.foo = $scope.foos.get({fooId:$scope.foo.id});
